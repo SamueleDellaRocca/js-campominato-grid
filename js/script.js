@@ -18,6 +18,17 @@ function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
     }
 }
 
+/*
+function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
+    for (let index = 1; index <= quantiNumeriDevoCreare; index++) {
+
+        let divNumero = document.createElement('div');
+        divNumero.classList.add(`${classeDifficolta}`);
+        divNumero.innerHTML = index;
+        divContainer.append(divNumero);
+    }
+}
+*/
 
 
 
