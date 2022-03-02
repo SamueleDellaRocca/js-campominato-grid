@@ -10,10 +10,10 @@ const inputDifficolta = document.querySelector('#difficolta').value;
 
 
 // funzione per creare i numeri 
-function creaNumeri(quantiNumeriDevoCreare) {
+function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
     for (let index = 1; index <= quantiNumeriDevoCreare; index++) {
 
-        let divNumero = `<div class="carta_hard">${index}</div>`;
+        let divNumero = `<div class="${classeDifficolta}">${index}</div>`;
         divContainer.innerHTML += divNumero;
     }
 }
@@ -30,14 +30,14 @@ function gioca() {
 
     divContainer.innerHTML = "";
 
-    if (inputDifficolta == 'Easy') {
-        creaNumeri(49);
+    if (inputDifficolta == ' Easy') {
+        creaNumeri(49, 'carta_easy');
 
     } else if (inputDifficolta == 'Medium') {
-        creaNumeri(81);
+        creaNumeri(81, 'carta_medium');
 
     } else {
-        creaNumeri(100);
+        creaNumeri(100, 'carta_hard');
 
     }
 
