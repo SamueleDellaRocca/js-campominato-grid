@@ -1,7 +1,7 @@
 // selezione elementi html 
 const bottonePlay = document.querySelector('#bottone_play');
 const divContainer = document.querySelector('#container');
-const inputDifficolta = document.querySelector('#difficolta').value;
+const inputDifficolta = document.querySelector('#difficolta');
 
 
 
@@ -30,10 +30,10 @@ function gioca() {
 
     divContainer.innerHTML = "";
 
-    if (inputDifficolta == ' Easy') {
+    if (inputDifficolta.value == ' Easy') {
         creaNumeri(49, 'carta_easy');
 
-    } else if (inputDifficolta == 'Medium') {
+    } else if (inputDifficolta.value == 'Medium') {
         creaNumeri(81, 'carta_medium');
 
     } else {
