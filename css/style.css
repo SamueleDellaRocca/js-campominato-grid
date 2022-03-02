@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+main {
+    height: 83vh;
+    background-color: aquamarine;
+}
+
+
+footer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+/* nav elements  */
+h1 {
+    font-size: 2rem;
+}
+
+
+#difficolta {
+    width: 150px;
+}
+
+#bottone_play {
+    padding: 0px 20px;
+}
+
+
+/* main elements  */
+
+
+
+/* footer elements  */
+.credits {
+    margin-left: 250px;
+}
