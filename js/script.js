@@ -30,7 +30,7 @@ function gioca() {
 
     divContainer.innerHTML = "";
 
-    if (inputDifficolta.value == ' Easy') {
+    if (inputDifficolta.value == 'Easy') {
         creaNumeri(49, 'carta_easy');
 
     } else if (inputDifficolta.value == 'Medium') {
