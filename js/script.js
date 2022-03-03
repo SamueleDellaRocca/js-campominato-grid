@@ -4,21 +4,16 @@ const divContainer = document.querySelector('#container');
 const inputDifficolta = document.querySelector('#difficolta');
 
 
-
-
-
-
-
 // funzione per creare i numeri 
-function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
-    for (let index = 1; index <= quantiNumeriDevoCreare; index++) {
+// function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
+//     for (let index = 1; index <= quantiNumeriDevoCreare; index++) {
 
-        let divNumero = `<div class="${classeDifficolta}">${index}</div>`;
-        divContainer.innerHTML += divNumero;
-    }
-}
+//         let divNumero = `<div class="${classeDifficolta}">${index}</div>`;
+//         divContainer.innerHTML += divNumero;
+//     }
+// }
 
-/*
+
 function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
     for (let index = 1; index <= quantiNumeriDevoCreare; index++) {
 
@@ -26,13 +21,13 @@ function creaNumeri(quantiNumeriDevoCreare, classeDifficolta) {
         divNumero.classList.add(`${classeDifficolta}`);
         divNumero.innerHTML = index;
         divContainer.append(divNumero);
+        divNumero.addEventListener('click', cambioColoreSfondo);
     }
 }
-*/
 
-
-
-
+function cambioColoreSfondo() {
+    this.classList.add('selezionata');
+}
 
 
 bottonePlay.addEventListener('click', gioca);
